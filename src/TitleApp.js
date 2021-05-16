@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 function TitleApp() {
   const [title, setTitle] = useState("Hello M8");
-  const [theme, setTheme] = useState("burlywood");
+  const [theme, setTheme] = useState("purple");
 
   function updateTitle(event) {
     console.log(event.target.value);
@@ -26,11 +26,11 @@ function TitleApp() {
       <hr/>
       <label htmlFor="Theme Color"></label>
         <select name="theme" id="theme" onChange={updateTheme}>
-          <option value="blueviolet">blueviolet</option>
+          <option value="lime">Lime Green</option>
           <option value="darkgray">Dark Gray</option>
           <option value="darkred">Dark Red</option>
-          <option value="black">black</option>
-          <option value="burlywood">burlywood</option>
+          <option value="black">Black</option>
+          <option value="coral">Coral</option>
         </select>
       </header>
     </div>
